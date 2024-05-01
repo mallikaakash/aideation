@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { UserButton } from "@clerk/nextjs";
+import CreateNoteDialog from "@/components/CreateNoteDialog";
 
 type Props = {};
 
@@ -34,6 +35,9 @@ const Dashboard = (props: Props) => {
             {" "}
             You have no notes yet...
           </h2>
+        </div>
+        <div className="grid sm:grid-cols-3 md:grid-cols-5 ">
+          <CreateNoteDialog />
         </div>
       </div>
     </div>
